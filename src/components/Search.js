@@ -1,9 +1,13 @@
 import React from "react";
 
-function Search () {
+function Search ({ handleInput }) {
     return (
         <section className="searchbox-wrapper">
-            <input type="text" placeholder="Search for a movie..." className="searchnbox" />
+            <input 
+                type="text" 
+                placeholder="Search for a movie..." 
+                className="searchnbox" 
+                onChange={handleInput} />
         </section>
     )
 }
