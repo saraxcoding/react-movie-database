@@ -3,6 +3,7 @@ import axios from axios;
 
 import Search from "./components/Search";
 import Results from "./components/Results";
+import Result from "./components/Result";
 
 function App () {
     const [state, setState] = useState({
@@ -42,6 +43,7 @@ function App () {
       </header>
       <main>
         <Search handleInput={handleInput} search={search} />
+        <Results results={state.results} />
       </main>
     </div>
   );
