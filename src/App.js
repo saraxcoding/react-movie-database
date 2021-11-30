@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from axios;
 
 import Search from "./components/Search";
+import Results from "./components/Results";
 
 function App () {
     const [state, setState] = useState({
@@ -13,8 +14,13 @@ function App () {
 
     const search = (e) => {
       if (e.key === "Enter") {
-        axios(url + "&s=" + state.s).then((data) => {
-          console.log(data);
+        axios(url + "&s=" + state.s).then(({ data }) => {
+          //console.log(data);
+          let result = data.Search;
+
+          setState(prevState => {
+            return { ...prevState, results: result }
+          }) // stores information
         })
       }
     }
