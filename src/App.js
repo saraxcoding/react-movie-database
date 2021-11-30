@@ -3,6 +3,7 @@ import React from "react";
 import Search from "./components/Search";
 
 function App () {
+    const url = "http://www.omdbapi.com/?i=tt3896198&apikey=b042511f";
   return (
     <div className="App">
       <header>
