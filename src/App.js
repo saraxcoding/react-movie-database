@@ -1,6 +1,8 @@
 import React from "react";
 
-function App() {
+import Search from "./components/Search";
+
+function App () {
   return (
     <div className="App">
       <header>

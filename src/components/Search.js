@@ -2,8 +2,8 @@ import React from "react";
 
 function Search () {
     return (
-        <section className="searchbox-wrap">
-            <input type="text" placeholder="Searvh for a movie..." className="searchnbox" />
+        <section className="searchbox-wrapper">
+            <input type="text" placeholder="Search for a movie..." className="searchnbox" />
         </section>
     )
 }
