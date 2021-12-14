@@ -38,7 +38,7 @@ function App () {
     }
 
   const openPopup = id => {
-    axios(apiurl + "&i=" + id).then(({data}) => {
+    axios(url + "&i=" + id).then(({data}) => {
       let result = data;
 
       setState(prevState => {
