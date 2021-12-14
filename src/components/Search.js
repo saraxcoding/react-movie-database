@@ -6,7 +6,7 @@ function Search ({ handleInput, search }) {
             <input 
                 type="text" 
                 placeholder="Search for a movie..." 
-                className="searchnbox" 
+                className="searchbox" 
                 onChange={handleInput} 
                 onKeyPress={search}
             />
