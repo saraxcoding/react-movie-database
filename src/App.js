@@ -4,6 +4,7 @@ import axios from 'axios';
 import Search from "./components/Search";
 import Results from "./components/Results";
 import Result from "./components/Result";
+import Popup from "./compontents/Popup";
 
 function App () {
     const [state, setState] = useState({
